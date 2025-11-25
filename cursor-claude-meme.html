@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AI Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-gray-100 overflow-x-hidden">
+    <!-- Floating particles background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-800 fixed w-full z-50 animate-slideDown">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
+                        AI Learning
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-300 hover:text-indigo-400 transition transform hover:scale-110 hover:-translate-y-1">Home</a>
+                    <a href="#features" class="text-gray-300 hover:text-indigo-400 transition transform hover:scale-110 hover:-translate-y-1">Features</a>
+                    <a href="#learn" class="text-gray-300 hover:text-indigo-400 transition transform hover:scale-110 hover:-translate-y-1">Learn</a>
+                    <a href="#docs" class="text-gray-300 hover:text-indigo-400 transition transform hover:scale-110 hover:-translate-y-1">Docs</a>
+                </div>
+                <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-500 transition transform hover:scale-110 hover:rotate-2 shadow-lg shadow-indigo-500/50 animate-pulse-slow">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <!-- Crazy animated background elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+            <div class="absolute top-40 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+            <div class="absolute top-1/2 right-1/4 w-60 h-60 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-spin-slow"></div>
+        </div>
+
+        <!-- Animated grid background -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto relative">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 animate-fadeInUp">
+                    Master the Art of
+                    <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient bg-300">
+                        AI Prompting
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto animate-fadeInUp animation-delay-300">
+                    Unlock the full potential of AI with expert-crafted lessons, interactive examples, and comprehensive documentation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp animation-delay-600">
+                    <button class="relative group bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-500 transition transform hover:scale-110 hover:-rotate-1 shadow-lg shadow-indigo-500/50 overflow-hidden">
+                        <span class="relative z-10">Start Learning Now</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient bg-300"></div>
+                    </button>
+                    <button class="bg-gray-800 text-indigo-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-700 transition border-2 border-indigo-600 transform hover:scale-110 hover:rotate-1 shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/50">
+                        View Documentation
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feature Cards with INSANE animations -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative group animate-fadeInUp animation-delay-800">
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-75 transition-all duration-500 animate-pulse-glow"></div>
+                    <div class="relative bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-700 hover:border-indigo-500 transition-all duration-500 transform hover:-translate-y-4 hover:rotate-2 hover:shadow-2xl hover:shadow-indigo-500/50">
+                        <div class="w-14 h-14 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-4 border border-indigo-500/30 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 animate-bounce-subtle">
+                            <svg class="w-8 h-8 text-indigo-400 group-hover:text-indigo-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-300 transition-colors">Comprehensive Lessons</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Deep dive into AI concepts with structured, easy-to-follow tutorials designed for all skill levels.</p>
+                    </div>
+                </div>
+
+                <div class="relative group animate-fadeInUp animation-delay-1000">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-75 transition-all duration-500 animate-pulse-glow animation-delay-300"></div>
+                    <div class="relative bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-700 hover:border-purple-500 transition-all duration-500 transform hover:-translate-y-4 hover:-rotate-2 hover:shadow-2xl hover:shadow-purple-500/50">
+                        <div class="w-14 h-14 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4 border border-purple-500/30 group-hover:-rotate-12 group-hover:scale-110 transition-all duration-500 animate-bounce-subtle animation-delay-200">
+                            <svg class="w-8 h-8 text-purple-400 group-hover:text-purple-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">Practical Examples</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Learn by doing with real-world examples and interactive prompting exercises.</p>
+                    </div>
+                </div>
+
+                <div class="relative group animate-fadeInUp animation-delay-1200">
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-red-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-75 transition-all duration-500 animate-pulse-glow animation-delay-600"></div>
+                    <div class="relative bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-700 hover:border-pink-500 transition-all duration-500 transform hover:-translate-y-4 hover:rotate-2 hover:shadow-2xl hover:shadow-pink-500/50">
+                        <div class="w-14 h-14 bg-pink-600/20 rounded-lg flex items-center justify-center mb-4 border border-pink-500/30 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 animate-bounce-subtle animation-delay-400">
+                            <svg class="w-8 h-8 text-pink-400 group-hover:text-pink-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-pink-300 transition-colors">Detailed Documentation</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Access comprehensive guides and references whenever you need them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-gray-900/50 backdrop-blur-sm py-16 border-y border-gray-800 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="group stat-item">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-125 transition-all duration-500 group-hover:rotate-12 stat-number">50+</div>
+                    <div class="text-gray-400 group-hover:text-indigo-400 transition-colors">Lessons</div>
+                </div>
+                <div class="group stat-item">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-125 transition-all duration-500 group-hover:-rotate-12 stat-number">1000+</div>
+                    <div class="text-gray-400 group-hover:text-purple-400 transition-colors">Examples</div>
+                </div>
+                <div class="group stat-item">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-125 transition-all duration-500 group-hover:rotate-12 stat-number">24/7</div>
+                    <div class="text-gray-400 group-hover:text-pink-400 transition-colors">Access</div>
+                </div>
+                <div class="group stat-item">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-2 transform group-hover:scale-125 transition-all duration-500 group-hover:-rotate-12 animate-spin-very-slow stat-number">∞</div>
+                    <div class="text-gray-400 group-hover:text-indigo-400 transition-colors">Possibilities</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Grid Section -->
+    <div class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4 animate-fadeIn">Why Choose Our Platform?</h2>
+                <p class="text-xl text-gray-400 animate-fadeIn animation-delay-200">Everything you need to become an AI expert</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="feature-card bg-gradient-to-br from-gray-800/80 to-gray-900/80 p-6 rounded-xl border border-gray-700 hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/30">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-indigo-600/20 rounded-lg flex items-center justify-center border border-indigo-500/30 animate-pulse-slow">
+                                <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white mb-2">Expert-Curated Content</h3>
+                            <p class="text-gray-400">Learn from industry professionals with years of AI experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card bg-gradient-to-br from-gray-800/80 to-gray-900/80 p-6 rounded-xl border border-gray-700 hover:border-purple-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-purple-600/20 rounded-lg flex items-center justify-center border border-purple-500/30 animate-pulse-slow animation-delay-200">
+                                <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white mb-2">Hands-On Practice</h3>
+                            <p class="text-gray-400">Interactive exercises to reinforce your learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card bg-gradient-to-br from-gray-800/80 to-gray-900/80 p-6 rounded-xl border border-gray-700 hover:border-pink-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-pink-500/30">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-pink-600/20 rounded-lg flex items-center justify-center border border-pink-500/30 animate-pulse-slow animation-delay-400">
+                                <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white mb-2">Community Support</h3>
+                            <p class="text-gray-400">Join a vibrant community of learners and experts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card bg-gradient-to-br from-gray-800/80 to-gray-900/80 p-6 rounded-xl border border-gray-700 hover:border-indigo-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/30">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-indigo-600/20 rounded-lg flex items-center justify-center border border-indigo-500/30 animate-pulse-slow animation-delay-600">
+                                <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white mb-2">Regular Updates</h3>
+                            <p class="text-gray-400">Stay current with the latest AI developments and techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section with CRAZY animations -->
+    <div class="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-96 h-96 bg-indigo-600 rounded-full filter blur-3xl opacity-20 animate-pulse-mega"></div>
+        </div>
+        <div class="max-w-4xl mx-auto relative">
+            <div class="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl shadow-2xl shadow-indigo-500/50 p-12 text-center overflow-hidden animate-gradient-flow
+            <div class="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl shadow-2xl shadow-indigo-500/50 p-12 text-center overflow-hidden animate-gradient-flow bg-300">
+                <!-- Animated floating shapes -->
+                <div class="absolute top-0 left-0 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-float"></div>
+                <div class="absolute bottom-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-float animation-delay-1000"></div>
+                <div class="absolute top-1/2 left-1/2 w-24 h-24 bg-white/10 rounded-full blur-xl animate-ping-slow"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-bold text-white mb-4 animate-bounce-in">Ready to Begin Your Journey?</h2>
+                    <p class="text-xl text-indigo-100 mb-8 animate-fadeIn animation-delay-300">Join thousands of learners mastering AI prompting today.</p>
+                    <button class="group relative bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-500 transform hover:scale-110 hover:rotate-3 shadow-2xl hover:shadow-white/50 animate-wiggle-hover overflow-hidden">
+                        <span class="relative z-10">Start Learning Free</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 via-pink-200 to-indigo-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section with animations -->
+    <div class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-white mb-16 animate-fadeIn">What Our Students Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700 transform hover:scale-105 hover:rotate-1 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/30">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full animate-pulse-slow"></div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-semibold">Sarah Chen</h4>
+                            <div class="flex text-yellow-400">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">"This platform transformed my understanding of AI. The lessons are clear and practical!"</p>
+                </div>
+                <div class="testimonial-card bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700 transform hover:scale-105 hover:-rotate-1 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/30">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full animate-pulse-slow animation-delay-300"></div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-semibold">Marcus Johnson</h4>
+                            <div class="flex text-yellow-400">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">"Best AI learning resource I've found. The community is amazing too!"</p>
+                </div>
+                <div class="testimonial-card bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700 transform hover:scale-105 hover:rotate-1 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/30">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-red-500 rounded-full animate-pulse-slow animation-delay-600"></div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-semibold">Emma Rodriguez</h4>
+                            <div class="flex text-yellow-400">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">"From beginner to expert in months. Couldn't recommend this more!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 text-gray-300 py-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent animate-gradient">AI Learning</h3>
+                    <p class="text-gray-500">Empowering the next generation of AI practitioners.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-white">Learn</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a href="#" class="hover:text-indigo-400 transition-all hover:translate-x-2 inline-block">Tutorials</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition-all hover:translate-x-2 inline-block">Examples</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition-all hover:translate-x-2 inline-block">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-white">Resources</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a href="#" class="hover:text-purple-400 transition-all hover:translate-x-2 inline-block">Documentation</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-all hover:translate-x-2 inline-block">API Reference</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-all hover:translate-x-2 inline-block">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a href="#" class="hover:text-pink-400 transition-all hover:translate-x-2 inline-block">About</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-all hover:translate-x-2 inline-block">Blog</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-all hover:translate-x-2 inline-block">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-600">
+                <p class="animate-fadeIn">&copy; 2024 AI Learning Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-4 rounded-full shadow-2xl shadow-indigo-500/50 opacity-0 pointer-events-none transition-all duration-500 hover:scale-110 hover:rotate-12 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <style>
+        /* Gradient animations */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .animate-gradient {
+            background-size: 300% 300%;
+            animation: gradient 6s ease infinite;
+        }
+
+        .bg-300 {
+            background-size: 300% 300%;
+        }
+
+        /* Blob animation */
+        @keyframes blob {
+            0%, 100% { transform: translate(0px, 0px) scale(1); }
+            25% { transform: translate(40px, -60px) scale(1.1); }
+            50% { transform: translate(-40px, 40px) scale(0.9); }
+            75% { transform: translate(60px, 20px) scale(1.05); }
+        }
+        
+        .animate-blob {
+            animation: blob 10s infinite;
+        }
+
+        /* Floating particles */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            25% { transform: translateY(-30px) translateX(20px); }
+            50% { transform: translateY(-60px) translateX(-20px); }
+            75% { transform: translateY(-30px) translateX(30px); }
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            animation: float 8s infinite ease-in-out;
+            opacity: 0.6;
+        }
+
+        .particle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { top: 20%; left: 80%; animation-delay: 0.5s; }
+        .particle:nth-child(3) { top: 40%; left: 20%; animation-delay: 1s; }
+        .particle:nth-child(4) { top: 60%; left: 90%; animation-delay: 1.5s; }
+        .particle:nth-child(5) { top: 80%; left: 30%; animation-delay: 2s; }
+        .particle:nth-child(6) { top: 30%; left: 60%; animation-delay: 2.5s; }
+        .particle:nth-child(7) { top: 70%; left: 70%; animation-delay: 3s; }
+        .particle:nth-child(8) { top: 50%; left: 40%; animation-delay: 3.5s; }
+        .particle:nth-child(9) { top: 90%; left: 60%; animation-delay: 4s; }
+        .particle:nth-child(10) { top: 15%; left: 50%; animation-delay: 4.5s; }
+
+        /* Fade in animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .animate-slideDown {
+            animation: slideDown 0.8s ease-out forwards;
+        }
+
+        /* Bounce subtle */
+        @keyframes bounceSubtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-bounce-subtle {
+            animation: bounceSubtle 3s ease-in-out infinite;
+        }
+
+        /* Pulse glow */
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .animate-pulse-glow {
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+        /* Spin animations */
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes spinVerySlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .animate-spin-slow {
+            animation: spinSlow 20s linear infinite;
+        }
+
+        .animate-spin-very-slow {
+            animation: spinVerySlow 30s linear infinite;
+        }
+
+        /* Pulse slow */
+        @keyframes pulseSlow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+
+        .animate-pulse-slow {
+            animation: pulseSlow 4s ease-in-out infinite;
+        }
+
+        /* Ping slow */
+        @keyframes pingSlow {
+            0% { transform: scale(1); opacity: 1; }
+            75%, 100% { transform: scale(2); opacity: 0; }
+        }
+
+        .animate-ping-slow {
+            animation: pingSlow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        /* Float animation */
+        @keyframes floatUp {
+            0%, 100% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-20px) translateX(10px); }
+        }
+
+        .animate-float {
+            animation: floatUp 6s ease-in-out infinite;
+        }
+
+        /* Bounce in */
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) translateY(-100px);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-bounce-in {
+            animation: bounceIn 1.2s ease-out;
+        }
+
+        /* Pulse mega */
+        @keyframes pulseMega {
+            0%, 100% { transform: scale(1); opacity: 0.2; }
+            50% { transform: scale(1.3); opacity: 0.3; }
+        }
+
+        .animate-pulse-mega {
+            animation: pulseMega 5s ease-in-out infinite;
+        }
+
+        /* Grid pattern */
+        .bg-grid-pattern {
+            background-image: 
+                linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        /* Animation delays */
+        .animation-delay-200 { animation-delay: 0.2s; }
+        .animation-delay-300 { animation-delay: 0.3s; }
+        .animation-delay-400 { animation-delay: 0.4s; }
+        .animation-delay-600 { animation-delay: 0.6s; }
+        .animation-delay-800 { animation-delay: 0.8s; }
+        .animation-delay-1000 { animation-delay: 1s; }
+        .animation-delay-1200 { animation-delay: 1.2s; }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+
+        /* Wiggle on hover */
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(3deg); }
+            75% { transform: rotate(-3deg); }
+        }
+
+        .animate-wiggle-hover:hover {
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        /* Gradient flow */
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .animate-gradient-flow {
+            animation: gradientFlow 8s ease infinite;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Feature card entrance animation */
+        .feature-card {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        /* Testimonial card entrance */
+        .testimonial-card {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+        .testimonial-card:nth-child(2) { animation-delay: 0.3s; }
+        .testimonial-card:nth-child(3) { animation-delay: 0.5s; }
+
+        /* Stat number counter effect */
+        .stat-item {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .stat-item:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item:nth-child(3) { animation-delay: 0.3s; }
+        .stat-item:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+
+    <script>
+        // Scroll to top button functionality
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.style.opacity = '1';
+                scrollTopBtn.style.pointerEvents = 'auto';
+            } else {
+                scrollTopBtn.style.opacity = '0';
+                scrollTopBtn.style.pointerEvents = 'none';
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards
+        document.querySelectorAll('.feature-card, .testimonial-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html> 
